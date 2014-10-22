@@ -1,0 +1,117 @@
+## -*- coding: utf-8 -*-
+<%namespace name="base" file="base_helper.tmpl" import="*" />
+
+
+${set_locale(lang)}
+<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+  margin:0;
+  padding:0;
+  font-family:"Open Sans";
+  background-image: url(/images/structure/wavecut_color1.png);
+  background-repeat: repeat
+}
+
+#wrapper {
+  position: absolute;
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+}
+
+#banner { background:black; text-align: center }
+
+#marsyas-menu {
+  width:150px;
+  //height:100vh;
+  float:left;
+  //position: absolute;
+  //left: 50%;
+  margin-top: 20px;
+  margin-left: -20px;
+  //background:rgba(80,80,80,0.3);
+  //background:transparent;
+}
+
+
+#container-fluid {
+  position: absolute;
+  left: 170px;
+  //float:right;
+  width:650px;
+}
+
+
+#marsyas-footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size:8pt
+}
+
+#marsyas-menu ul
+{
+  list-style-type:none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0px 0px 0px 0px;
+  background: rgba(80,80,80,0.3);
+  text-align: center;
+}
+
+#marsyas-menu li
+{
+  //padding-top: 5px;
+  //padding-bottom: 5px;
+}
+
+
+#marsyas-menu li li
+{
+  background: rgb(80,80,80);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  //margin-left: 1px;
+  //margin-right: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#marsyas-menu li a { color: rgb(255,180,0); text-decoration: none; font-size:10pt }
+
+</style>
+</head>
+<body>
+
+<div id="banner">
+<img src="/images/banner.jpg" alt="banner">
+</div>
+
+<div id="wrapper">
+  <div id="marsyas-menu">
+  <ul>
+  ${html_navigation_links()}
+  </ul>
+  </div>
+
+  <div class="container-fluid" id="container-fluid">
+      <!--Body content-->
+      <div class="row-fluid">
+      <div class="span2"></div>
+      <div class="span8">
+      <%block name="content"></%block>
+      </div>
+      </div>
+      <!--End of body content-->
+      <div id="marsyas-footer">
+      ${content_footer}
+      </div>
+  </div>
+
+</div>
+</body>
