@@ -12,6 +12,8 @@ George Tzanetakis
 
 Affiliation: `University of Victoria - Department of Computer Science`_
 
+.. image:: /images/people/tzanetakis.jpg
+
 I am an assistant professor in Computer Science (also cross-listed in Music and
 Electrical and Computer Engineering) at the University of Victoria in Canada. I
 received my PhD in Computer Science from Princeton University under the
@@ -39,6 +41,8 @@ Luis Gustavo Martins
 ====================
 *Windows and Qt Guru (Portuguese Invasion 1)*
 
+.. image:: /images/people/martins.jpg
+
 I've been using and contributing to Marsyas since its 0.1 version, back in 2003,
 when working on a contract project that required a realtime audio classifier
 (for music/speech/noise/silence...). When I started my PhD in the area of
@@ -52,6 +56,8 @@ most import learning experiences in my research and academic life.
 Luis Teixeira
 =============
 *Video, Python, upcoming Marsyas-0.x (Portuguese Invasion 2)*
+
+.. image:: /images/people/teixeira.jpg
 
 I'm a PhD student at FEUP and a researcher at the Telecommunications and
 Multimedia Unit of INESC Porto. Currently most of my time is consumed by my PhD
@@ -71,6 +77,8 @@ Mathieu Lagrange
 ================
 *Author of the most complex MarSystem network*
 
+.. image:: /images/people/lagrange.jpg
+
 I am interested in auditory scene analysis for music streams understanding. For
 such a purpose, Marsyas as a valuable tool as it provides the user with an
 efficient, easy-to-install platform for processing various type of audio data.
@@ -79,8 +87,9 @@ challenging research tasks, Marsyas proved to be flexible and fun to use.
 
 Graham Percival
 ===============
-
 *Lilypond, Documentation Editor*
+
+.. image:: /images/people/percival.jpg
 
 I finished my Masters in Computer Science and Music, working on software to help
 beginning string students. I am also the Documentation Editor and Bug Meister
@@ -90,8 +99,9 @@ http://percival-music.ca/
 
 Adam Tindale
 ============
-
 *Open Sound Control, Chuck, Percussion and Live Electroacoustic Music*
+
+.. image:: /images/people/tindale.jpg
 
 Adam Tindale is an electronic drummer, teacher, and researcher. His research
 combines signal processing and machine learning tools from Marsyas to classify
@@ -105,6 +115,8 @@ Steven Ness
 ===========
 *Coder*
 
+.. image:: /images/people/ness.jpg
+
 Steven is a mad scientist and coder who works on various aspects of Marsyas. He
 added unit tests to Marsyas, turned the website into a Ruby on Rails backend,
 has written some Marsystems, and uses Marsyas in the development of rich
@@ -116,6 +128,8 @@ http://www.sness.net/
 Fabien Gouyon
 =============
 
+.. image:: /images/people/gouyon.jpg
+
 I have been using Marsyas since 2007 for almost all audio processing involved in
 my research and that of my students.
 
@@ -124,6 +138,8 @@ http://www.fabiengouyon.org/
 Stefaan Lippens
 ===============
 *Coder and Code Styler*
+
+.. image:: /images/people/lippens.jpg
 
 My first encounter with Marsyas was in 2002. It was used for my master thesis at
 Ghent University on the topic of automatic musical genre classification. After
@@ -143,6 +159,8 @@ Zhang Bingjun (Eddy)
 ====================
 *Coder*
 
+.. image:: /images/people/bingjun.jpg
+
 I am currently PhD candidate under the supervision of Dr Wang Ye, in Department
 of Computer Science, School of Computing, National University of Singapore. My
 research interest include music information retrieval, multimodal data fusion,
@@ -153,6 +171,8 @@ robustness.
 
 Miguel Lopez
 ============
+
+.. image:: /images/people/lopez.jpg
 
 My name is Miguel Lopes, I'm a finalist student at FEUP (Porto), and I've just
 finished my Masters Degree Thesis about musical genre classification - developed
@@ -173,6 +193,8 @@ Ajay Kapur
 ==========
 *Sensors and Robots*
 
+.. image:: /images/people/kapur.jpg
+
 I have been using Marsyas to do audio feature extraction and machine learning
 experiments in my research in computational ethnomusicology. I have also used
 Marsyas in live electronic music performance, integrating multimodal sensor
@@ -184,6 +206,8 @@ http://ajaykapur.com/
 
 Mark Brand
 ==========
+
+.. image:: /images/people/brand.jpg
 
 I am lecturer in music technology at the Nelson Mandela Metropolitan University
 (South Africa), and currently working toward an MScEng from Stellenbosch
@@ -198,6 +222,8 @@ an alternate theoretical framework. Before that I was a rock musician.
 Gabrielle Odowichuk
 ===================
 
+.. image:: /images/people/odowichuk.jpg
+
 I am pursuing a MASc under the supervision of George Tzanetakis and Peter
 Driessen at the University of Victoria. My work is in the field of audio signal
 processing, and I used Marsyas to process real-time audio signals for sound
@@ -207,6 +233,8 @@ to come. Yay, Marsyas!
 
 Giovanni Donati
 =======================
+
+.. image:: /images/people/donati.jpg
 
 I'm an Electronics and Telecommunications Engineering student at the Bologna
 University in Italy. I'm writing my thesis about Automatic Genre Recognition and
@@ -224,6 +252,8 @@ Thijs Koerselman
 ================
 *Software Developer and Designer*
 
+.. image:: /images/people/koerselman.jpg
+
 I'm a software developer and designer working with interactive media and sound.
 I hold an MA and BSc in Music Technology. After graduating in 2004 I got
 increasingly involved with programming. I have developed software for creative
@@ -239,10 +269,14 @@ data modeling and adaptive user interfaces.
 Fabiano Fidancio
 ================
 
+.. image:: /images/people/fidancio.jpg
+
 I'm a Brazilian software developer/free software enthusiast that found
 
 Tiago F. Tavares
 ================
+
+.. image:: /images/people/tavares.jpg
 
 I'm a PhD candidate in the University of Campinas (UNICAMP) and I will be
 visiting UVic, here in Victoria-BC, for one year. I have been working with
@@ -252,6 +286,8 @@ documentation, and let's see what patches I will do in the future!
 
 Aaron Rush
 ==========
+
+.. image:: /images/people/rush.jpg
 
 I am a grade 12 student at a high school in Canada. I am interested in the
 process of transcribing polyphonic music. For such a purpose, Marsyas is a
