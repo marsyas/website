@@ -65,7 +65,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         (
           (
-            ('/about/about.html', 'About'),
+            ('/index.html', 'About'),
             ('/about/overview.html', 'Overview'),
             ('/about/projects.html', 'Projects'),
             ('/about/videos.html', 'Videos'),
@@ -145,6 +145,7 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
+    ("about/about.rst", "", "story.tmpl"),
     ("about/*.rst", "about", "story.tmpl"),
     ("downloads/*.rst", "downloads", "story.tmpl"),
     ("community/*.rst", "community", "story.tmpl"),
@@ -202,7 +203,7 @@ COMPILERS = {
 # TAG_PAGES_ARE_INDEXES = True
 
 # Final location is output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "blog"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
