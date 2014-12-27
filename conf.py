@@ -87,10 +87,10 @@ NAVIGATION_LINKS = {
         ),
         (
           (
-            ('http://marsyas.info/assets/docs/manual/marsyas-user/index.html', 'User Manual'),
-            ('http://marsyas.info/assets/docs/manual/marsyas-devel/index.html', 'Developer Manual'),
-            ('http://marsyas.info/assets/docs/manual/marsyas-cookbook/index.html','Cookbook'),
-            ('http://marsyas.info/assets/docs/sourceDoc/html/index.html','C++ Library Reference'),
+            ('doc/manual/marsyas-user/index.html', 'User Manual'),
+            ('doc/manual/marsyas-devel/index.html', 'Developer Manual'),
+            ('doc/manual/marsyas-cookbook/index.html','Cookbook'),
+            ('doc/sourceDoc/html/index.html','C++ Library Reference'),
           ),
           'Documentation'
         ),
