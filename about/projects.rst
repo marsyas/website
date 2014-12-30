@@ -7,6 +7,7 @@
 
 Marsyas has been used for a variety of projects in both academia and industry:
 
+- `HEARBO - Hearing Robot`_
 - `Yahoo Research`_
 - `ORBIT Project (BBC Research)`_
 - `VISNET I & II EU FP6 NoE Projects`_
@@ -26,6 +27,19 @@ Marsyas has been used for a variety of projects in both academia and industry:
 - `SndPeek`_
 - `Analysis of Audio Features in Broadcast Sports Video`_
 - `vivi`_
+
+HEARBO - Hearing Robot
+======================
+
+Marsyas was integrated with HARK (HRI-JP Audition for Robots with Kyoto
+University) Robot Audition System for music processing. It has already been used
+by HRI-JP, in collaboration with INESC Porto and LIACC-FEUP, for the development
+of an interactive robot dancing system HEARBO_, where a humanoid robot
+simultaneously responds to the beat of music and to the speech of a human
+interactor in a real-world scenario. HARK-Marsyas could be the baseline of music
+listening robots in the future.
+
+.. _HEARBO: http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/hearbo-a-robot-with-superhearing
 
 Yahoo Research
 ==============
