@@ -8,6 +8,7 @@
 Marsyas has been used for a variety of projects in both academia and industry:
 
 - `HEARBO - Hearing Robot`_
+- `Genetic Programming for Sound Synthesizer Evolution`_
 - `Yahoo Research`_
 - `ORBIT Project (BBC Research)`_
 - `VISNET I & II EU FP6 NoE Projects`_
@@ -40,6 +41,19 @@ interactor in a real-world scenario. HARK-Marsyas could be the baseline of music
 listening robots in the future.
 
 .. _HEARBO: http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/hearbo-a-robot-with-superhearing
+
+Genetic Programming for Sound Synthesizer Evolution
+===================================================
+
+Simon Fraser University, School of Interactive Arts and Technology:
+
+Marsyas is used to design and prototype a sound similarity function
+that acts as fitness function in our system. This function leads our algorithm
+in the space of all possible synthesizers to find the most relevant architecture
+and parameters to produce a given target sound. The Marsyas Python wrappers have
+been successfully used in our distributed implementation.
+
+http://metacreation.net
 
 Yahoo Research
 ==============
