@@ -36,6 +36,45 @@ http://webhome.csc.uvic.ca/~gtzan
 .. _Moodlogic Inc.: http://www.moodlogic.com
 .. _Teligence Communications Inc.: http://www.teligence.net
 
+Graham Percival
+===============
+*Lilypond, Documentation Editor*
+
+.. image:: /images/people/percival.jpg
+
+I finished my Masters in Computer Science and Music, working on software to help
+beginning string students. I am also the Documentation Editor and Bug Meister
+for `GNU/LilyPond <http://www.lilypond.org>`__.
+
+http://percival-music.ca/
+
+Jakob Leben
+===========
+
+.. image:: /images/people/jakob-leben.jpeg
+
+I am a researcher with main interest in models of computation and
+programming languages for digital signal processing.
+
+My contributions to Marsyas include:
+
+- Marsyas Script (scripting language)
+- Marsyas Inspector (graphical network inspector),
+- improved real-time audio processing
+- improved Open Sound Control support and real-time control in general
+- improved interaction with Qt
+- dataflow testing and debugging system
+
+I have also contributed significantly to SuperCollider (programming language
+and system for sound synthesis and algorithmic composition) and other
+open-source projects.
+
+I am currently a PhD student at Computer Science, Universtiy of Victoria
+under supervision of prof. George Tzanetakis.
+My current research focuses on the design of a new programming language
+for DSP and compiler optimization techniques.
+
+https://github.com/jleben
 
 Luis Gustavo Martins
 ====================
@@ -52,6 +91,95 @@ PhD work, being efficient and flexible to develop advanced algorithms for sound
 segregation, that run close to real-time. Contributing to Marsyas also allowed
 me to interact and work with all the Marsyas developer team, becoming one of the
 most import learning experiences in my research and academic life.
+
+Steven Ness
+===========
+*Coder*
+
+.. image:: /images/people/ness.jpg
+
+Steven is a mad scientist and coder who works on various aspects of Marsyas. He
+added unit tests to Marsyas, turned the website into a Ruby on Rails backend,
+has written some Marsystems, and uses Marsyas in the development of rich
+internet-enabled applications. He's currently doing his Ph.D. in the lab of
+George Tzanetakis in the field of Music Information Retrieval.
+
+http://www.sness.net/
+
+Mathieu Lagrange
+================
+*Author of the most complex MarSystem network*
+
+.. image:: /images/people/lagrange.jpg
+
+I am interested in auditory scene analysis for music streams understanding. For
+such a purpose, Marsyas as a valuable tool as it provides the user with an
+efficient, easy-to-install platform for processing various type of audio data.
+As the owner of the Most complex Marsystem network Award, I can say that even on
+challenging research tasks, Marsyas proved to be flexible and fun to use.
+
+Stefaan Lippens
+===============
+*Coder and Code Styler*
+
+.. image:: /images/people/lippens.jpg
+
+My first encounter with Marsyas was in 2002. It was used for my master thesis at
+Ghent University on the topic of automatic musical genre classification. After
+completing my electrical engineering studies, I started working in the field of
+image processing and obtained my PhD on halftoning and printing. Since 2008 I'm
+back in the field of audio and music processing, now as a post-doctoral
+researcher at the Digital Speech and Signal Processing research group of Ghent
+University. The research revolves around music information retrieval and is
+bridged with an outside company. Together we focus on large scale automatic
+extraction of several music characteristics such as musical genre and rhythm
+style. My main Marsyas activities and contributions are situated in the core
+MarSystems and the Python bindings.
+
+http://stefaanlippens.net/
+
+Tiago F. Tavares
+================
+
+.. image:: /images/people/tavares.jpg
+
+I'm a PhD candidate in the University of Campinas (UNICAMP) and I will be
+visiting UVic, here in Victoria-BC, for one year. I have been working with
+automatic transcription of audio for some years now, and I hope to contribute
+with the development of Marsyas as much as I can. I have written some
+documentation, and let's see what patches I will do in the future!
+
+Adam Tindale
+============
+*Open Sound Control, Chuck, Percussion and Live Electroacoustic Music*
+
+.. image:: /images/people/tindale.jpg
+
+Adam Tindale is an electronic drummer, teacher, and researcher. His research
+combines signal processing and machine learning tools from Marsyas to classify
+drum events in real-time to develop a more expressive electronic drum. Adam is
+currently completing his Interdisciplinary Ph.D. in Music, Computer Science, and
+Electrical Engineering under the supervision of George Tzanetakis.
+
+http://www.adamtindale.com/>
+
+Thijs Koerselman
+================
+*Software Developer and Designer*
+
+.. image:: /images/people/koerselman.jpg
+
+I'm a software developer and designer working with interactive media and sound.
+I hold an MA and BSc in Music Technology. After graduating in 2004 I got
+increasingly involved with programming. I have developed software for creative
+applications, live performance systems and art installations. Currently I work
+for the Utrecht School of Arts in the Netherlands, faculty of Art, Media and
+Technlogy, where we employ Marsyas in a project focusing on flexible and
+intelligent media repository software. Currently Marsyas is used for tasks such
+as music/speech classification and similarity matching. All content processing
+is done via a modular distributed pipeline framework, so additional algorithms
+can be easily plugged in. Other parts of the project include video analysis,
+data modeling and adaptive user interfaces.
 
 Luis Teixeira
 =============
@@ -73,58 +201,6 @@ are my main research interests. C/C++ and Python are the tools of the trade.
 
 http://luisteixeira.net
 
-Mathieu Lagrange
-================
-*Author of the most complex MarSystem network*
-
-.. image:: /images/people/lagrange.jpg
-
-I am interested in auditory scene analysis for music streams understanding. For
-such a purpose, Marsyas as a valuable tool as it provides the user with an
-efficient, easy-to-install platform for processing various type of audio data.
-As the owner of the Most complex Marsystem network Award, I can say that even on
-challenging research tasks, Marsyas proved to be flexible and fun to use.
-
-Graham Percival
-===============
-*Lilypond, Documentation Editor*
-
-.. image:: /images/people/percival.jpg
-
-I finished my Masters in Computer Science and Music, working on software to help
-beginning string students. I am also the Documentation Editor and Bug Meister
-for `GNU/LilyPond <http://www.lilypond.org>`__.
-
-http://percival-music.ca/
-
-Adam Tindale
-============
-*Open Sound Control, Chuck, Percussion and Live Electroacoustic Music*
-
-.. image:: /images/people/tindale.jpg
-
-Adam Tindale is an electronic drummer, teacher, and researcher. His research
-combines signal processing and machine learning tools from Marsyas to classify
-drum events in real-time to develop a more expressive electronic drum. Adam is
-currently completing his Interdisciplinary Ph.D. in Music, Computer Science, and
-Electrical Engineering under the supervision of George Tzanetakis.
-
-http://www.adamtindale.com/>
-
-Steven Ness
-===========
-*Coder*
-
-.. image:: /images/people/ness.jpg
-
-Steven is a mad scientist and coder who works on various aspects of Marsyas. He
-added unit tests to Marsyas, turned the website into a Ruby on Rails backend,
-has written some Marsystems, and uses Marsyas in the development of rich
-internet-enabled applications. He's currently doing his Ph.D. in the lab of
-George Tzanetakis in the field of Music Information Retrieval.
-
-http://www.sness.net/
-
 Fabien Gouyon
 =============
 
@@ -134,26 +210,6 @@ I have been using Marsyas since 2007 for almost all audio processing involved in
 my research and that of my students.
 
 http://www.fabiengouyon.org/
-
-Stefaan Lippens
-===============
-*Coder and Code Styler*
-
-.. image:: /images/people/lippens.jpg
-
-My first encounter with Marsyas was in 2002. It was used for my master thesis at
-Ghent University on the topic of automatic musical genre classification. After
-completing my electrical engineering studies, I started working in the field of
-image processing and obtained my PhD on halftoning and printing. Since 2008 I'm
-back in the field of audio and music processing, now as a post-doctoral
-researcher at the Digital Speech and Signal Processing research group of Ghent
-University. The research revolves around music information retrieval and is
-bridged with an outside company. Together we focus on large scale automatic
-extraction of several music characteristics such as musical genre and rhythm
-style. My main Marsyas activities and contributions are situated in the core
-MarSystems and the Python bindings.
-
-http://stefaanlippens.net/
 
 Zhang Bingjun (Eddy)
 ====================
@@ -247,42 +303,12 @@ systems for different purposes. I'm using and will use Marsyas for all the audio
 processing operations for the prototype because I find it very useful and
 powerful.
 
-
-Thijs Koerselman
-================
-*Software Developer and Designer*
-
-.. image:: /images/people/koerselman.jpg
-
-I'm a software developer and designer working with interactive media and sound.
-I hold an MA and BSc in Music Technology. After graduating in 2004 I got
-increasingly involved with programming. I have developed software for creative
-applications, live performance systems and art installations. Currently I work
-for the Utrecht School of Arts in the Netherlands, faculty of Art, Media and
-Technlogy, where we employ Marsyas in a project focusing on flexible and
-intelligent media repository software. Currently Marsyas is used for tasks such
-as music/speech classification and similarity matching. All content processing
-is done via a modular distributed pipeline framework, so additional algorithms
-can be easily plugged in. Other parts of the project include video analysis,
-data modeling and adaptive user interfaces.
-
 Fabiano Fidancio
 ================
 
 .. image:: /images/people/fidancio.jpg
 
 I'm a Brazilian software developer/free software enthusiast that found
-
-Tiago F. Tavares
-================
-
-.. image:: /images/people/tavares.jpg
-
-I'm a PhD candidate in the University of Campinas (UNICAMP) and I will be
-visiting UVic, here in Victoria-BC, for one year. I have been working with
-automatic transcription of audio for some years now, and I hope to contribute
-with the development of Marsyas as much as I can. I have written some
-documentation, and let's see what patches I will do in the future!
 
 Aaron Rush
 ==========
