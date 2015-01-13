@@ -5,6 +5,11 @@
 .. title: Publications
 .. slug: publications
 
+**Declarative Composition and Reactive Control in Marsyas**.
+J. Leben, G. Tzanetakis. 2014.
+Joint 40th International Computer Music Conference (ICMC) and
+11th Sound and Music Computing conference (SMC).
+
 **Flexible Scheduling for DataFlow Audio Processing**
 N. Burroughs, A. Parkin, G. Tzanetakis
 Proc. IEEE Int. Computer Music Conf. (ICMC), New Orleans, USA
