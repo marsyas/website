@@ -4,6 +4,10 @@
 .. title: Source Code
 .. slug: sources
 
+Instructions for building Marsyas from source are provided `in the manual`__.
+
+.. __: http://marsyas.info/doc/manual/marsyas-user/Source-installation.html#Source-installation
+
 Latest Stable Release (version 0.5)
     Source code for the latest stable release is in the "release/0.5"
     branch of our git repository on GitHub, and it can be downloaded
