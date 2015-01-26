@@ -763,9 +763,6 @@ attenuates the NoiseSource::
 If you run this script on a rather rhythmical sound file, you will hear
 noise which follows the sound energy contour of the sound file.
 
-For example, the **Yin** MarSystem performs the YIN fundamental frequency
-estimation algorithm on its input audio.
-
 
 Controlling the termination of a script
 ---------------------------------------
