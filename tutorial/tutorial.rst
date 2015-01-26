@@ -2,6 +2,9 @@
 Marsyas Tutorial
 ################
 
+Note: This tutorial is work in progress. If you find any issues such as
+broken code and links, please report to: jakob.leben at gmail.com.
+
 Overview
 ========
 
