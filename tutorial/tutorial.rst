@@ -1,8 +1,6 @@
-.. link:
-.. description:
-.. tags:
-.. title: Tutorial
-.. slug: tutorial
+################
+Marsyas Tutorial
+################
 
 Overview
 ========
