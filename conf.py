@@ -87,6 +87,7 @@ NAVIGATION_LINKS = {
         ),
         (
           (
+            ('/tutorial/tutorial.html', 'Tutorial'),
             ('/doc/manual/marsyas-user/index.html', 'User Manual'),
             ('/doc/manual/marsyas-devel/index.html', 'Developer Manual'),
             ('/doc/manual/marsyas-cookbook/index.html','Cookbook'),
