@@ -49,8 +49,9 @@ Building your own Marsyas
 If you want to live on the bleeding edge,
 or you use Linux (which is about the same), or you are just up for a challenge,
 you can try building Marsyas from source code.
-You will find instructions in
-`The Manual <http://marsyas.info/doc/manual/marsyas-user/>`__
+Find out about this `on Marsyas website`__.
+
+.. __: http://marsyas.info/downloads/sources.html
 
 Let's get started
 =================
