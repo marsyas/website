@@ -140,13 +140,14 @@ to process audio files).
 MarSystems and Networks
 =======================
 
-I know, you got that: the purpose of a Marsyas program is to process
+Okay, so the purpose of a Marsyas program is to process
 (possibly infinite) streams of numbers. But how does it do that?
-Or rather, how can you use Marsyas to create programs that process
-numbers in a particular way that *you* want?
+Or rather, how can *you* use Marsyas to create programs that process
+numbers in a *particular way* that you want?
 
-Marsyas provides many **basic building units** that can be composed into
-sound processing programs. If we look at these units and squint a little,
+Marsyas provides many **basic building units** that you can combine and
+compose into sound processing programs.
+If we look at these units and squint a little,
 each of them looks and behaves just like the program as a whole: it is a
 baby stream processing program! The only difference is that it does a
 much simpler job, perhaps even just adding numbers from two input streams
@@ -154,12 +155,12 @@ together. A whole program is a composition of basic units which pass
 streams of numbers to each other: the output of some units is the input
 to others. Some basic units also consume the program's input streams and
 produce the program's output streams.
-A basic unit of composition in Marsyas is called a **MarSystem**, and
-a composition of MarSystems is called a **network**.
 
 .. <diagram: network>
 
-In fact, a network of MarSystems is not just a disorganized mess of
+A basic unit of composition in Marsyas is called a **MarSystem**, and
+a composition of MarSystems is called a **network**.
+Furthermore, a network of MarSystems is not just a disorganized mess of
 interconnected units. **Primitive MarSystems** are grouped into larger units called
 **composite MarSystems**, which are themselves composed into even larger
 groups. This is very useful for several purposes:
