@@ -1,10 +1,3 @@
-body {
-  margin:0;
-  padding:0;
-  font-family:"Open Sans";
-  background-image: url(/images/structure/wavecut_color1.png);
-  background-repeat: repeat
-}
 
 h1 { font-size: 2.0em; }
 h2 { font-size: 1.5em; }
@@ -21,35 +14,27 @@ dd {
   margin-bottom: 1em;
 }
 
-#wrapper {
+#content {
   position: absolute;
   width: 900px;
   left: 50%;
   margin-left: -450px;
 }
 
-#banner { background:black; text-align: center }
-
-#marsyas-menu {
+#menu {
   width:150px;
   //height:100vh;
   float:left;
   //position: absolute;
   //left: 50%;
-  margin-top: 20px;
-  margin-left: -20px;
+  margin-top: 10px;
+  //margin-left: -20px;
   //background:rgba(80,80,80,0.3);
   //background:transparent;
   padding-bottom: 50px;
 }
 
-#marsyas-footer {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size:8pt
-}
-
-#marsyas-menu ul
+#menu ul
 {
   list-style-type:none;
   margin-top: 0;
@@ -59,7 +44,7 @@ dd {
   text-align: center;
 }
 
-#marsyas-menu li
+#menu li
 {
   //padding-top: 5px;
   //padding-bottom: 5px;
@@ -68,7 +53,7 @@ dd {
 }
 
 
-#marsyas-menu li li
+#menu li li
 {
   background: rgb(80,80,80);
   margin-top: 1px;
@@ -79,11 +64,18 @@ dd {
   padding-bottom: 2px;
 }
 
-#marsyas-menu li a { color: rgb(255,180,0); text-decoration: none; font-size:10pt }
+#menu li a { color: rgb(255,180,0); text-decoration: none; font-size:10pt }
 
-#container-fluid {
+#page-content
+{
   position: absolute;
   left: 170px;
   //float:right;
   width:650px;
+}
+
+#page-footer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size:8pt
 }

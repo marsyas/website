@@ -146,10 +146,11 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("about/about.rst", "", "story.tmpl"),
-    ("about/*.rst", "about", "story.tmpl"),
-    ("downloads/*.rst", "downloads", "story.tmpl"),
-    ("community/*.rst", "community", "story.tmpl"),
+    ("about/about.rst", "", "page.tmpl"),
+    ("about/*.rst", "about", "page.tmpl"),
+    ("downloads/*.rst", "downloads", "page.tmpl"),
+    ("community/*.rst", "community", "page.tmpl"),
+    ("tutorial/tutorial.rst", "tutorial", "tutorial.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.

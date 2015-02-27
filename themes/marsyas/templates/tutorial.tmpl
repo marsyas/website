@@ -1,0 +1,15 @@
+## -*- coding: utf-8 -*-
+
+<%namespace name="pheader" file="post_header.tmpl"/>
+<%inherit file="base.tmpl"/>
+
+<%block name="extra_head">
+<link rel="stylesheet" type="text/css" href="/assets/css/tutorial.css" />
+</%block>
+
+<%block name="content">
+<div id="content">
+      ${pheader.html_title()}
+      ${post.text()}
+</div>
+</%block>

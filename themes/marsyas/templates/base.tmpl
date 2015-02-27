@@ -11,7 +11,8 @@ ${set_locale(lang)}
 <head>
 <meta charset="utf-8">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="/assets/css/marsyas.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/base.css" />
+<%block name="extra_head"></%block>
 </head>
 <body>
 
@@ -21,26 +22,6 @@ ${set_locale(lang)}
   </a>
 </div>
 
-<div id="wrapper">
-  <div id="marsyas-menu">
-  <ul>
-  ${html_navigation_links()}
-  </ul>
-  </div>
+<%block name="content"></%block>
 
-  <div class="container-fluid" id="container-fluid">
-      <!--Body content-->
-      <div class="row-fluid">
-      <div class="span2"></div>
-      <div class="span8">
-      <%block name="content"></%block>
-      </div>
-      </div>
-      <!--End of body content-->
-      <div id="marsyas-footer">
-      ${content_footer}
-      </div>
-  </div>
-
-</div>
 </body>

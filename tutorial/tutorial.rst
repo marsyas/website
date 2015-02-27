@@ -1,3 +1,6 @@
+.. title: Tutorial
+.. slug: tutorial
+
 ################
 Marsyas Tutorial
 ################

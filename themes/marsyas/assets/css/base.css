@@ -1,0 +1,9 @@
+body {
+  margin:0;
+  padding:0;
+  font-family:"Open Sans";
+  background-image: url(/images/structure/wavecut_color1.png);
+  background-repeat: repeat
+}
+
+#banner { background:black; text-align: center }
