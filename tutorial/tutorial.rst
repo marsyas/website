@@ -37,7 +37,7 @@ The simplest way to get Marsyas ready for use is to download it from
 our Bintray repositories:
 
 Mac OS X:
-    Download the latest version `here <https://bintray.com/marsyas/macosx/marsyas>`_.
+    Download the latest version `here <https://bintray.com/marsyas/macosx/marsyas>`__.
 
     The ZIP package contains the following directories and items:
 
@@ -47,7 +47,7 @@ Mac OS X:
     - **Marsyas Inspector app**.
 
 Windows:
-    Download the latest version `here <https://bintray.com/marsyas/windows/marsyas>`_.
+    Download the latest version `here <https://bintray.com/marsyas/windows/marsyas>`__.
 
     The ZIP package contains the following directories and items:
 
@@ -223,7 +223,7 @@ in a series, Parallel runs other MarSystems in parallel. A network may contain
 multiple instances of any MarSystem type.
 
 A listing of most MarSystem types and their descriptions are provided in the
-`C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`_.
+`C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`__.
 Each MarSystem type is a C++ class deriving from the "MarSystem" base class.
 The names of MarSystem types used in Marsyas Script are identical to the
 names of the C++ classes.
@@ -681,7 +681,7 @@ command lists all controls of the SineSource type::
     marsyas-info list controls SineSource
 
 Further information about some controls is provided in the
-`C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`_
+`C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`__
 , in the documentation of C++ classes that represent MarSystem types.
 Note that the C++ documentation often displays control names prefixed with
 their type and a slash. For example, the "frequency" control of SineSource
@@ -920,12 +920,12 @@ marsyas-info:
 
 Manual:
   Further information about Marsyas and its features is available in
-  `the manual <http://marsyas.info/doc/manual/marsyas-user/index.html>`_.
+  `the manual <http://marsyas.info/doc/manual/marsyas-user/index.html>`__.
   Please note that some information in the manual is out of date.
 
 C++ Library Reference:
   Detailed description of Marsystem types is provided in
-  `the C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`_.
+  `the C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`__.
   Each MarSystem type is a C++ class deriving from the "MarSystem" base class.
   The names of MarSystem types used in Marsyas Script are identical to the
   names of the C++ classes.
@@ -936,4 +936,4 @@ C++ Library Reference:
 Marsyas Script Reference:
   Detailed description of the Marsyas Script language syntax and semantics
   is provided in
-  `the language reference <https://github.com/marsyas/marsyas/wiki/Scripting-Language>`_.
+  `the language reference <https://github.com/marsyas/marsyas/wiki/Scripting-Language>`__.
