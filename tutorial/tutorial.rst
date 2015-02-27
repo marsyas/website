@@ -204,6 +204,40 @@ Ultimately, the program as a whole is just a very large composite MarSystem.
           -> AudioSink
       }
 
+Marsystem Types
+===============
+
+There are many different types of MarSystems. Each type serves a different
+purpose and has a unique name. The types are mainly divided into **primitive types**
+and **composite types**. Primitive types operate directly on streams of numbers;
+for example,
+SineSource generates sine waves,
+SoundFileSource reads an audio file,
+Gain scales a stream of numbers,
+AudioSink sends audio to the computer's speakers. Composite types group
+other MarSystems in different ways, for example Series connects other MarSystems
+in a series, Parallel runs other MarSystems in parallel. A network may contain
+multiple instances of any MarSystem type.
+
+A listing of most MarSystem types and their descriptions are provided in the
+`C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`_.
+Each MarSystem type is a C++ class deriving from the "MarSystem" base class.
+The names of MarSystem types used in Marsyas Script are identical to the
+names of the C++ classes.
+
+Alternatively, a list of all available MarSystems in a given installation
+of Marsyas is provided by the ``marsyas-info`` command-line program, when
+executed like this::
+
+    marsyas-info list marsystems
+
+This is useful because the online C++ library reference is not always
+up-to-date, some MarSystems are not included in the reference, or they may not
+be included in your particular installation. However, ``marsyas-info`` can
+not provide elaborate descriptions of MarSystem types as the online reference
+does.
+
+
 Composite MarSystems
 ====================
 
@@ -587,8 +621,8 @@ In Marsyas Script, the value of controls for a MarSystems is specified in
 curly brackets  ``{ }`` after the type of the MarSystem. The syntax is
 rather intuitive: ``<control name> = <value>``.
 
-Control types
--------------
+Control types and values
+------------------------
 
 Control values can be one of 5 different types:
 
@@ -620,6 +654,36 @@ real number for frequency, but we are giving it an integer number::
 
 Just adding a decimal point and a zero would fix the problem:
 ``frequency = 440.0``.
+
+Each MarSystem type also has **default values** for each of its controls,
+which are used if a value is not explicitely specified in the script.
+For example, the default value of the ``frequency`` control of the SineSource
+type is ``440.0``, so the following two code examples are equivalent:
+
+::
+
+  Series { -> SineSource { frequency = 440.0 } -> AudioSink }
+
+::
+
+  Series { -> SineSource -> AudioSink }
+
+Discovering all controls
+------------------------
+
+For each MarSystem type, all its controls, their types and default values
+can be listed by the ``marsyas-info`` program. For example, the following
+command lists all controls of the SineSource type::
+
+    marsyas-info list controls SineSource
+
+Further information about some controls is provided in the
+`C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`_
+, in the documentation of C++ classes that represent MarSystem types.
+Note that the C++ documentation often displays control names prefixed with
+their type and a slash. For example, the "frequency" control of SineSource
+would be displayed as "mrs_real/frequency". In Marsyas Script, just disregard
+this and always use the control name without the type.
 
 Control expressions and paths
 -----------------------------
@@ -838,6 +902,35 @@ Transpose
 Where to go from here
 =====================
 
-- `The manual <http://marsyas.info/doc/manual/marsyas-user/index.html>`_
-- `The C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`_
-- `The language reference <https://github.com/marsyas/marsyas/wiki/Scripting-Language>`_
+marsyas-info:
+  The ``marsyas-info`` command-line program provides information about features
+  available in your installation of Marsyas.
+
+  All Marsystem types are listed using the following command::
+
+      marsyas-info list marsystems
+
+  All controls of a MarSystem type are listed using the following command while
+  replacing ``<marsystem type>`` with the name of the MarSystem type::
+
+      marsyas-info list controls <marsystem type>
+
+Manual:
+  Further information about Marsyas and its features is available in
+  `the manual <http://marsyas.info/doc/manual/marsyas-user/index.html>`_.
+  Please note that some information in the manual is out of date.
+
+C++ Library Reference:
+  Detailed description of Marsystem types is provided in
+  `the C++ library reference <http://marsyas.info/doc/sourceDoc/html/index.html>`_.
+  Each MarSystem type is a C++ class deriving from the "MarSystem" base class.
+  The names of MarSystem types used in Marsyas Script are identical to the
+  names of the C++ classes.
+  The C++ documentation often displays control names prefixed with
+  their control type and a slash (for example "mrs_real/frequency").
+  In Marsyas Script, disregard this and use control names without their type.
+
+Marsyas Script Reference:
+  Detailed description of the Marsyas Script language syntax and semantics
+  is provided in
+  `the language reference <https://github.com/marsyas/marsyas/wiki/Scripting-Language>`_.
