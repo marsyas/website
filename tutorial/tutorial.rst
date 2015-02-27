@@ -31,17 +31,27 @@ Installing Marsyas
 
 First things first, let's get Marsyas installed!
 The simplest way to get Marsyas ready for use is to download it from
-our `bintray repository <https://bintray.com/marsyas>`__:
+our Bintray repositories:
 
-Mac OS X download contains:
-    - **Marsyas Inspector** application.
-    - **marsyas-run** program in the *Marsyas Inspector.app/Contents/MacOS*
-      subfolder of the Inspector.
+Mac OS X:
+    Download the latest version `here <https://bintray.com/marsyas/macosx/marsyas>`_.
 
-Windows download contains:
-    - All **command-line programs**, including marsyas-run.
-    - **Marsyas Inspector** application.
-    - **C++ Library**.
+    The ZIP package contains the following directories and items:
+
+    - **bin**: all command-line programs, including **marsyas-run**
+    - lib: C++ libraries
+    - include: C++ header files
+    - **Marsyas Inspector app**.
+
+Windows:
+    Download the latest version `here <https://bintray.com/marsyas/windows/marsyas>`_.
+
+    The ZIP package contains the following directories and items:
+
+    - **bin**: all command-line and graphical programs,
+      including **marsyas-run** and Marsyas Inspector (**marsyas-inspector**)
+    - lib: C++ libraries
+    - include: C++ header files
 
 Building your own Marsyas
 =========================
@@ -70,6 +80,9 @@ command-line. In the rest of this tutorial, we will assume that
 the program can be executed simply by using its name, e.g. with a command::
 
     marsyas-run
+
+In the following examples, substitute the above with whatever command is suitable
+for your system and installation of Marsyas.
 
 Executing this program without any arguments (options) should print the
 following output::
