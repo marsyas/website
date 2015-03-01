@@ -151,6 +151,7 @@ PAGES = (
     ("downloads/*.rst", "downloads", "page.tmpl"),
     ("community/*.rst", "community", "page.tmpl"),
     ("tutorial/tutorial.rst", "tutorial", "tutorial.tmpl"),
+    ("new-doc/inspector/*.rst", "new-doc/inspector", "tutorial.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
