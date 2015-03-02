@@ -723,7 +723,7 @@ The basic mathematical operations are supported:
 - division: ``/``
 
 Note that all control expressions must be enclosed in parenthesis ``( )``!
-Parenthsis can also be used in expressions to force non-standard
+Parenthesis can also be used in expressions to force non-standard
 order of calculation, for example: ``(2 * (5 + 7))``.
 
 Now, if we wanted to change the entire set of harmonic frequencies up,
@@ -756,7 +756,7 @@ accessible with a **control path** ``/base/frequency``::
 As you can hear, whatever frequency value we give to the "base" SineSource,
 others will compute their frequency values from the "base" one.
 
-We could further improve this by **add controls** to MarSystems which will act
+We could further improve this by **adding controls** to MarSystems which will act
 as temporary value placeholders. We can add controls to *any* MarSystem,
 including the composits. This is done by adding the ``+`` sign
 in front of the control value assignment: ``+ <new control name> = <value>``.
@@ -873,10 +873,82 @@ control, which now evaluates to ``true``, and the script stops executing.
 Advanced data flow management
 =============================
 
+Sometimes we would like a MarSystem to process an input stream with
+a different granularity (slice size in samples) than how it is
+produced by another MarSystem, or maybe we want to process overlapping
+regions of an input stream. These and other kinds of **data flow
+transformations** are done by the MarSystems described in this section.
+
 ShiftInput
 -----------
 
-...
+ShiftInput allows processing of overlapping slices of a stream, or skipping
+chunks of the stream between processed slices. It takes an input stream with
+any slice size, it stores a number of previous input samples if necessary,
+and for each input slice either joins past input samples to make the slice
+larger, or drops some samples to make it smaller. The modified slices become
+the output stream.
+
+The flow transformation can be described by two parameters:
+
+- window size: the size of output slices in samples
+- hop size: the distance in the input stream between the first samples of
+  consecutive output slices.
+
+If the window size is larger than the hop size, then past samples are added to
+input slices, otherwise samples are dropped from input slices.
+
+The hop size is always equivalent to the size in samples of input slices
+(the ``inSamples`` control). The window size is defined by the ``winSize`` control.
+
+A typical example is computing Fourier transform on overlapping slices of
+an audio stream. In the code below, the ShiftInput merges each current input
+slice with the previous one to create output slices such that the second half
+of an output slice is the same as the first half of the next::
+
+  Series {
+    + input_file = "sound.wav"
+    -> input: SoundFileSource { filename = /input_file  inSamples = 512 }
+    -> ShiftInput { winSize = (2 * inSamples) }
+    -> Spectrum
+    -> CsvSink { filename="result.csv" }
+    + done = (input/hasData == false)
+  }
+
+Mind that the number of input samples to a MarSystem is automatically determined
+from the number of output samples of the **preceding** MarSystem. Hence, to
+define the hop size, one has to  make sure that the output slice size of the
+SoundFileSource equals the desired hop size. Because each MarSystem
+automatically determines its output slice size from it's input slice size,
+that in turn requires setting the input slice size of the SoundFileSource
+(the *inSamples* control).
+
+Memory
+------
+
+Memory operates in a way very similar to ShiftInput, but it has different
+parameters. Specifically, it has a control named ``memSize`` which defines
+how many whole consecutive input slices are merged together to form an output
+slice. This is equivalent to using a ShiftInput with a window size equal
+to hop size multiplied by the value of the ``memSize`` control.
+Because the type of ``memSize`` is integer, only whole input slices may
+be merged, and samples can not be skipped.
+
+Memory is typically used to accumulate larger slices of audio feature streams
+to compute their statistics over time. The following example computes
+RMS energy of each 512 samples of an audio file, then computes the mean
+of 10 consecutive RMS energy values::
+
+  Series {
+    + input_file = "sound.wav"
+    -> input: SoundFileSource { filename = /input_file  inSamples = 512 }
+    -> Rms
+    -> Memory { memSize = 10 }
+    -> Mean
+    -> CsvSink { filename="result.csv" }
+    + done = (input/hasData == false)
+  }
+
 
 Accumulator
 -----------
@@ -888,13 +960,8 @@ Shredder
 
 ...
 
-Memory
-------
-
-...
-
-Transpose
----------
+Transposer
+----------
 
 ...
 
