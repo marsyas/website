@@ -830,23 +830,30 @@ used in the expression for the ``gain`` control of the Gain that
 attenuates the NoiseSource::
 
   Series {
-    -> Parallel {
-      -> Series {
-        -> input: SoundFileSource {filename="sound.wav"}
-        -> Rms
-        -> energy: FlowToControl
-      }
-      -> Series {
-          -> NoiseSource
-          -> Gain {gain = (energy/value * 0.5)}
+    -> input: SoundFileSource {filename="sound.wav"}
+    -> MixToMono
+    -> Fanout {
+        -> Series {
+          -> Rms
+          -> energy: FlowToControl
+        }
+        -> Series {
+          -> Fanout {
+            -> Gain { gain = 0.1 }
+            -> Series {
+              -> NoiseSource
+              -> Gain {gain = (energy/value * 0.5)}
+            }
+          }
           -> AudioSink
-      }
+        }
     }
     + done = (input/hasData == false)
   }
 
-If you run this script on a rather rhythmical sound file, you will hear
-noise which follows the sound energy contour of the sound file.
+If you run this script, you will hear the sound file mixed to mono on
+the left stereo channel, and the noise which follows the energy contour of the
+sound file on the right stereo channel.
 
 
 Controlling the termination of a script
